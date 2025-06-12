@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendamento de Exame</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agendar Exame</h1>
+    <form id="formAgendamento">
+      <label for="nome">Nome do Paciente</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+
+      <label for="cpf">CPF</label>
+      <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required>
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" maxlength="15" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+
+      <label for="tipo">Tipo de Exame</label>
+      <select id="tipo" name="tipo" required>
+        <option value="" disabled selected>Selecione...</option>
+        <option>Hemograma Completo</option>
+        <option>Urina Tipo I</option>
+        <option>Raio-X Simples</option>
+        <option>Ultrassonografia</option>
+        <option>Tomografia Computadorizada</option>
+        <option>Ressonância Magnética</option>
+        <option>Eletrocardiograma (ECG)</option>
+        <option>Ecocardiograma</option>
+        <option>Endoscopia Digestiva</option>
+        <option>Colonoscopia</option>
+        <option>Mamografia</option>
+        <option>Densitometria Óssea</option>
+        <option>Biópsia</option>
+        <option>Glicemia de Jejum</option>
+        <option>Teste de Esforço</option>
+        <option>Perfil Lipídico</option>
+        <option>Outros</option>
+      </select>
+
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data" min="" required>
+
+      <label for="hora">Hora</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <button type="submit">Agendar & Enviar WhatsApp</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

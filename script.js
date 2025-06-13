@@ -63,7 +63,7 @@ document.getElementById('formAgendamento')
         //`⏳ *Criado em:* ${agendamento.criadoEmFormatado}`;
 
       // Envia via WhatsApp
-      const destinatario = "5581995038049";
+      const destinatario = "5521992433022";
       const url = 
         `https://api.whatsapp.com/send?phone=${destinatario}` +
         `&text=` + encodeURIComponent(mensagem);
